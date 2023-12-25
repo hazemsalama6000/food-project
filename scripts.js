@@ -13,4 +13,12 @@ setInterval(function () {
         i = 0;
     }
     i++;
-}, 3000)
+}, 3000);
+
+
+const menu = document.querySelector('.menu');
+const navbar = document.querySelector('.navbar');
+menu.addEventListener('click',function(){
+    menu.classList.toggle('change');
+    navbar.classList.toggle('change')
+});
